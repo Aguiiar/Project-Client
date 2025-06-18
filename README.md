@@ -1,11 +1,11 @@
-# 🧩 Resumo do Projeto — Gerenciador de Clientes (CRUD completo)
+# 🧩 Resumo do Projeto — Gerenciador de Clientes (CRUD completo) - MVC 5
 
 Desenvolvi um sistema web de gestão de clientes (Pessoa Física e Jurídica) com funcionalidades completas de **cadastro**, **listagem**, **edição**, **exclusão lógica**, **busca dinâmica** e **validações robustas**.  
 O sistema foi construído com foco em **boas práticas de desenvolvimento**, **separação de responsabilidades**, **experiência do usuário** e **validação de dados eficaz**.
 
 Este projeto demonstra minha habilidade em:
 
-- Aplicações ASP.NET com arquitetura MVC
+- Aplicações ASP.NET com arquitetura MVC 5
 - Validações com **Data Annotations**
 - Máscaras dinâmicas com **jQuery**
 - Implementação de CRUD com **persistência em memória**, simulando um backend real
