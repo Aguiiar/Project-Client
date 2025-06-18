@@ -1,0 +1,103 @@
+﻿@model List<Project.Models.Client>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Lista de Clientes</h2>
+
+<a href='@Url.Action("Client", "Client")' class="btn btn-success mb-3">Cadastrar Cliente</a>
+
+<input type="text" id="searchInput" class="form-control mb-2" placeholder="Buscar por nome ou documento" />
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+
+                <th>Documento</th>
+
+                <th>Data de cadastro</th>
+
+                <th>Telefone</th>
+                <th>Status</th>
+                <th>Ações</th>
+
+
+            </tr>
+        </thead>
+        <tbody id="clientTable">
+            @foreach (var Client in Model)
+            {
+                <tr class="@(Client.IsDeleted ? "table-danger" : "")">
+                    <td class="client-name">@Client.Name</td>
+                    <td>@Client.Type</td>
+
+                    <td class="client-doc">@Client.Document</td>
+
+                    <td>@Client.DateRegistration.ToString("dd/MM/yyyy HH:mm")</td>
+
+                    <td>@Client.Phone</td>
+                    <td>@(Client.IsDeleted ? "Excluído" : "Ativo")</td>
+                    <td class="d-flex">
+                        @{
+                            if (!Client.IsDeleted)
+                            {
+                                <a href="@Url.Action("Edit", "Client", new { id = Client.Id })" class="btn btn-warning btn-sm">Editar</a>
+
+                                using (Html.BeginForm("Delete", "Client", new { id = Client.Id }, FormMethod.Post, new { onsubmit = "return confirm('Deseja realmente remover?');", @class = "ms-2" }))
+                                {
+                                    @Html.AntiForgeryToken();
+                                    <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                                }
+                            }
+                            else
+                            {
+                                <p><span class="text-muted">-</span></p>
+                            }
+                        }
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p id="notFoundMessage" style="display:none; text-align:center; margin-top:20px">
+    Nenhum Cliente encontrado
+</p>
+@section Scripts{
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.getElementById('searchInput');
+            const rows = document.querySelectorAll('#clientTable tr');
+            const notFoundMessage = document.getElementById('notFoundMessage');
+            input.addEventListener('input', function () {
+                const textClient = input.value.trim().toLowerCase();
+                let foundResults = false;
+
+                rows.forEach(function (row) {
+                    const name = row.querySelector('.client-name')?.textContent.toLowerCase() || '';
+                    const document = row.querySelector('.client-doc')?.textContent.toLowerCase() || '';
+
+                    if (name.includes(textClient) || document.includes(textClient)) {
+                        row.style.display = '';
+                        foundResults = true;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                if (foundResults) {
+                    notFoundMessage.style.display = 'none';
+                } else {
+                    notFoundMessage.style.display = 'block';
+                }
+            });
+        });
+    </script>
+}
+

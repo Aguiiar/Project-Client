@@ -1,0 +1,86 @@
+﻿@model Project.Models.Client
+
+@{
+    var isEdit = Model.Id != 0;
+    ViewBag.title = isEdit ? "Editar Cliente" : "Cadastrar Cliente";
+}
+
+
+
+<h2>Cadastrar Cliente</h2>
+@using (Html.BeginForm(isEdit ? "Edit" : "Add", "Client", FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+    @Html.HiddenFor(c => c.Id)
+
+
+    <div class="form-group">
+       <label For="Name">Nome</label>
+        @Html.TextBoxFor(c => c.Name, new { @class = "form-control mb-1", @id = "Name" })
+        @Html.ValidationMessageFor(c => c.Name, "", new { @class = "text-danger" })
+    </div>
+
+
+    <div class="form-group">
+        <label For="Type">Tipo</label>
+        @Html.DropDownListFor(c => c.Type, new SelectList(new[] { "PF", "PJ" }), "Selecione", new { @class = "form-control mb-1", @id = "Type" })
+        @Html.ValidationMessageFor(c => c.Type, "", new { @class = "text-danger" })
+
+    </div>
+
+
+
+    <div class="form-group">
+        <label For="Document">Documento</label>
+        @Html.TextBoxFor(c => c.Document, new { @class = "form-control mb-1", @id = "Document" })
+        @Html.ValidationMessageFor(c => c.Document, "", new { @class = "text-danger" })
+
+    </div>
+
+
+    <div class="form-group">
+        <label For="Phone">Telefone</label>
+        @Html.TextBoxFor(c => c.Phone, new { @class = "form-control mb-1", @id = "Phone" })
+        @Html.ValidationMessageFor(c => c.Phone, "", new { @class = "text-danger" })
+
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">@((isEdit ? "Salvar alterações" : "Cadastrar"))</button>
+        <a href="@Url.Action("Index", "Client")" class="btn btn-secondary">Voltar</a>
+    </div>
+
+
+}
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            function applyMask() {
+                var type = $('#Type').val();
+                var $doc = $('#Document');
+
+                $doc.unmask();
+
+                if (type === "PF") {
+                    $doc.mask("000.000.000-00");
+                } else if (type === "PJ") {
+                    $doc.mask("00.000.000/0000-00");
+                }
+            }
+
+            $('#Type').change(function () {
+                $('#Document').val('');
+                applyMask();
+            });
+
+            applyMask();
+
+            $('#Phone').mask('(00) 00000-0000');
+
+        });
+
+    </script>
+}
+

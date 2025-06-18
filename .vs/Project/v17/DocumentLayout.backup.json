@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\139500\\Pictures\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|c:\\users\\139500\\pictures\\project\\project\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|solutionrelative:project\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|c:\\users\\139500\\pictures\\project\\project\\views\\client\\clientform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|solutionrelative:project\\views\\client\\clientform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|c:\\users\\139500\\pictures\\project\\project\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|solutionrelative:project\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|c:\\users\\139500\\pictures\\project\\project\\models\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63373EC0-33E4-4264-AC09-1A13B71CA20B}|Project\\Project.csproj|solutionrelative:project\\models\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\139500\\Pictures\\Project\\Project\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\139500\\Pictures\\Project\\Project\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "Project\\Views\\Client\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T12:55:26.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\139500\\Pictures\\Project\\Project\\Views\\Client\\ClientForm.cshtml",
+              "RelativeDocumentMoniker": "Project\\Views\\Client\\ClientForm.cshtml",
+              "ToolTip": "C:\\Users\\139500\\Pictures\\Project\\Project\\Views\\Client\\ClientForm.cshtml",
+              "RelativeToolTip": "Project\\Views\\Client\\ClientForm.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T12:55:29.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\139500\\Pictures\\Project\\Project\\Models\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\139500\\Pictures\\Project\\Project\\Models\\ClientRepository.cs",
+              "RelativeToolTip": "Project\\Models\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T12:55:22.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\139500\\Pictures\\Project\\Project\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Project\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\139500\\Pictures\\Project\\Project\\Models\\Client.cs",
+              "RelativeToolTip": "Project\\Models\\Client.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T12:55:15.75Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
