@@ -146,4 +146,31 @@ Este projeto demonstra minha habilidade em:
 - 📚 Ideal para destacar habilidades em entrevistas e portfólios técnicos
 
 
+![Imagem 1](images/1.png)  
+
+![Imagem 2](images/2.png)  
+
+![Imagem 3](images/3.png)  
+
+![Imagem 4](images/4.png)  
+
+![Imagem 5](images/5.png)  
+
+![Imagem 6](images/6.png)  
+
+![Imagem 7](images/7.png)  
+
+![Imagem 8](images/8.png)  
+
+![Imagem 9](images/9.png)  
+
+![Imagem 10](images/10.png)  
+
+![Imagem 11](images/11.png)  
+
+![Imagem 12](images/12.png)  
+
+![Imagem 13](images/13.png)  
+
+![Imagem 14](images/14.png)  
 
