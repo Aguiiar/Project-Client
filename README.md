@@ -145,6 +145,8 @@ Este projeto demonstra minha habilidade em:
 - 🧹 **Código limpo, manutenível** e pronto para futura integração com banco real
 - 📚 Ideal para destacar habilidades em entrevistas e portfólios técnicos
 
+---
+
 ### 📸 Screenshot
 
 ![img-1](Images/img-1.png)  
