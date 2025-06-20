@@ -16,7 +16,7 @@ namespace Project.Models
         [Required(ErrorMessage = "O Tipo é obrigatório")]
         public string Type { get; set; }
         [Required(ErrorMessage = "O CPF/CNPJ é obrigatório")]
-        [RegularExpression(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "Digite um CPF/CNPJ Válido")]
+        [RegularExpression(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "Digite um CPF/CNPJ válido")]
         public string Document { get; set; }
         public DateTime DateRegistration { get; set; }
         [Required(ErrorMessage = "O Telefone é obrigatório")]
