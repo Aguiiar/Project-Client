@@ -145,18 +145,32 @@ Este projeto demonstra minha habilidade em:
 - 🧹 **Código limpo, manutenível** e pronto para futura integração com banco real
 - 📚 Ideal para destacar habilidades em entrevistas e portfólios técnicos
 
+### 📸 Screenshot
 
 ![img-1](Images/img-1.png)  
+
 ![img-2](Images/img-2.png)  
+
 ![img-3](Images/img-3.png)  
+
 ![img-4](Images/img-4.png)  
+
 ![img-5](Images/img-5.png)  
+
 ![img-6](Images/img-6.png)  
+
 ![img-7](Images/img-7.png)  
+
 ![img-8](Images/img-8.png)  
+
 ![img-9](Images/img-9.png)  
+
 ![img-10](Images/img-10.png)  
+
 ![img-11](Images/img-11.png)  
+
 ![img-12](Images/img-12.png)  
+
 ![img-13](Images/img-13.png)  
+
 ![img-14](Images/img-14.png) 
